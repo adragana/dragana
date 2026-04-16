@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dragana's Projects</title>
+  <meta
+    name="description"
+    content="A software engineering portfolio with project overviews, detailed case studies, and personal links."
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <a class="brand" href="index.html">Dragana Andjelkovic</a>
+      <div class="logo-initials"></div>
+      <nav class="topnav">
+        <a href="#projects">Projects</a>
+        <a href="#skillsdiv">Skills</a>
+        <a href="#links">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Software Engineering Projects</p>
+          <h1>Turning complex ideas into clean, secure and scalable solutions.</h1>
+          <p class="hero-text">
+             A collection of projects covering Full-stack development, API design,
+  and cybersecurity.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">View Projects</a>
+            <a class="button button-secondary" href="#about">Read Bio</a>
+          </div>
+          <ul class="hero-stats">
+            <li>
+              <span class="stat-value">4</span>
+              <span class="stat-label">Current projects</span>
+            </li>
+            <li>
+              <span class="stat-value">Static</span>
+              <span class="stat-label">No database needed</span>
+            </li>
+            <li>
+              <span class="stat-value">Scalable</span>
+              <span class="stat-label">Ready for future work</span>
+            </li>
+          </ul>
+          
+        </div>
+
+        <div class="hero-visual">
+          <canvas id="nnCanvas"></canvas>
+        </div>
+
+        <div class="scroll-hint" onclick="document.getElementById('skillsdiv').scrollIntoView({behavior:'smooth'})" id="skillsdiv">
+          <span></span>
+          <span></span>
+        </div>
+      </section>
+
+      <section class="section section-terminal" id="terminal">
+        <div class="terminal-layout">
+          <!-- left panel-->
+          <div class="terminal-col">
+            <div class="section-heading">
+              <p class="eyebrow">Tech Stack</p>
+              <h2>Under the hood.</h2>
+            </div>
+            <div class="panel terminal-window-full">
+              <div class="terminal-topbar">
+                <span class="term-dot dot-red"></span>
+                <span class="term-dot dot-yellow"></span>
+                <span class="term-dot dot-green"></span>
+                <span class="terminal-title">dragana@portfolio ~ </span>
+              </div>
+              <div class="terminal-body">
+                <div class="term-line">
+                  <span class="term-muted">$</span>
+                  <span class="term-cmd"> whoami</span>
+                </div>
+                <div class="term-line term-output term-purple">Dragana - Software Engineer</div>
+
+                <div class="term-line term-gap">
+                  <span class="term-muted">$</span>
+                  <span class="term-cmd"> cat skills.json</span>
+                </div>
+                <div class="term-line term-muted">{</div>
+                <div class="term-line">
+                  &nbsp;&nbsp;<span class="term-amber">"frontend"</span><span class="term-muted">:</span>
+                  <span class="term-green"> ["React", "TypeScript", "CSS"]</span><span class="term-muted">,</span>
+                </div>
+                <div class="term-line">
+                  &nbsp;&nbsp;<span class="term-amber">"backend"</span><span class="term-muted">:</span>
+                  <span class="term-green"> ["Node", "Python", "PostgreSQL"]</span><span class="term-muted">,</span>
+                </div>
+                <div class="term-line">
+                  &nbsp;&nbsp;<span class="term-amber">"status"</span><span class="term-muted">:</span>
+                  <span class="term-green"> "open to work"</span>
+                </div>
+                <div class="term-line term-muted">}</div>
+
+                <div class="term-line term-gap">
+                  <span class="term-muted">$</span>
+                  <span class="term-cmd"> ./contact.sh</span>
+                </div>
+                <div class="term-line term-output">
+                  <span class="term-green">✓</span>
+                  <span class="term-muted"> Reach me at </span>
+                  <span class="term-purple">andjelkovic.draganaa@gmail.com</span>
+                </div>
+
+                <div class="term-line term-gap">
+                  <span class="term-muted">$</span>
+                  <span class="term-cmd"></span>
+                </div>
+                <div class="term-line term-gap">
+                  <span class="term-muted">$</span>
+                  <span class="term-cursor"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--2.Skills panel-->
+          <div class="skills-col" >
+            <div class="section-heading">
+              <p class="eyebrow">Expertise</p>
+              <h2>Skills &amp; Tools</h2>
+            </div>
+            <div class="panel skills-panel">
+              <div class="skill-category" data-skill>
+                <div class="skill-category-header">
+                  <span class="skill-icon">⌨</span>
+                  <h3 class="skill-category-title">Programming</h3>
+                </div>
+                <ul class="skill-tags">
+                  <li>Java</li>
+                  <li>Python</li>
+                  <li>C#/.NET</li>
+                  <li>C</li>
+                  <li>JavaScript</li>
+                  <li>Bash</li>
+                  <li>SQL</li>
+                </ul>
+              </div>
+
+              <div class="skill-category" data-skill>
+                <div class="skill-category-header">
+                  <span class="skill-icon">🗄</span>
+                  <h3 class="skill-category-title">Databases &amp; ORM</h3>
+                </div>
+                <ul class="skill-tags">
+                  <li>PostgreSQL</li>
+                  <li>MongoDB</li>
+                  <li>MySQL</li>
+                  <li>EF Core</li>
+                  <li>SQLAlchemy</li>
+                </ul>
+              </div>
+
+              <div class="skill-category" data-skill>
+                <div class="skill-category-header">
+                  <span class="skill-icon">🔐</span>
+                  <h3 class="skill-category-title">Cybersecurity</h3>
+                </div>
+                <ul class="skill-tags">
+                  <li>OWASP Top 10</li>
+                  <li>Burp Suite</li>
+                  <li>OWASP ZAP</li>
+                  <li>IBM QRadar</li>
+                </ul>
+              </div>
+
+              <div class="skill-category" data-skill>
+                <div class="skill-category-header">
+                  <span class="skill-icon">🛠</span>
+                  <h3 class="skill-category-title">DevOps &amp; Collaboration</h3>
+                </div>
+                <ul class="skill-tags">
+                  <li>Git</li>
+                  <li>TFS</li>
+                  <li>GitLab</li>
+                  <li>Docker</li>
+                </ul>
+              </div>
+
+              <div class="skill-category" data-skill>
+                <div class="skill-category-header">
+                  <span class="skill-icon">🌐</span>
+                  <h3 class="skill-category-title">Networks &amp; OS</h3>
+                </div>
+                <ul class="skill-tags">
+                  <li>OSI model</li>
+                  <li>Routing</li>
+                  <li>Process Management</li>
+                  <li>TCP/IP</li>
+                  <li>DNS</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="section-heading">
+          <p class="eyebrow">Selected Projects</p>
+          <h2>Projects Overview</h2>
+          <p>
+            Each card links to a dedicated project page where you can see technical
+            notes.
+          </p>
+        </div>
+        <div class="project-grid" id="project-grid"></div>
+      </section>
+
+      <section class="section section-split" id="about">
+        <div class="panel bio-card">
+          <p class="eyebrow">About</p>
+          <h2>Engineer focused on thoughtful product delivery.</h2>
+          <p>
+           
+          </p>
+          <p>
+            
+          </p>
+        </div>
+
+        <div class="panel link-card" id="links">
+          <p class="eyebrow">Personal Links</p>
+          <h2>Connect with me</h2>
+          <div class="link-list">
+            <a href="https://github.com/adragana" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="mailto:andjelkovic.draganaa@gmail.com">Email</a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="data/projects.js"></script>
+  <script src="scripts/main.js"></script>
+  <script src="scripts/neural.js"></script>
+  <script>
+    const skillObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const categories = entry.target.querySelectorAll('[data-skill]');
+          categories.forEach((cat, i) => {
+            setTimeout(() => {
+              cat.classList.add('skill-visible');
+            }, i * 120);
+          });
+          skillObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    const skillsPanel = document.querySelector('.skills-panel');
+    if (skillsPanel) skillObserver.observe(skillsPanel);
+  </script>
+</body>
+</html>
